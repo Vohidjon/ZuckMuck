@@ -8,13 +8,14 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.websystique.springmvc")
-public class AppConfig {
+public class AppConfig extends WebMvcConfigurerAdapter { // you forgot to extend the necessary class
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -25,14 +26,8 @@ public class AppConfig {
     }
 
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/assets/**")
-                .addResourceLocations("classpath:/assets/");
-        registry.addResourceHandler("/css/**")
-                .addResourceLocations("/css/");
-        registry.addResourceHandler("/img/**")
-                .addResourceLocations("/img/");
-        registry.addResourceHandler("/js/**")
-                .addResourceLocations("/js/");
+        registry.addResourceHandler("/resources/**")
+                .addResourceLocations("/resources/");
     }
     @Bean
     public MessageSource messageSource() {

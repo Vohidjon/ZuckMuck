@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="<c:url value="/resources/assets/css/beginner.css" />" rel="stylesheet">
+    <link type="text/css" href="<c:url value="/resources/css/beginner.css" />" rel="stylesheet">
 </head>
 <body>
 <div style="background-color: #333" class="container-fluid">
