@@ -1,0 +1,98 @@
+
+.pol-beginner-t-img {
+    height: 170px;
+    border: 1px solid gray;
+}
+
+.pol-beginner-topics {
+    padding: 3px;
+}
+
+#pol-food-form,#pol-room-form,#pol-family-form,#pol-room-form,#pol-school-form,#pol-classroom-form,#pol-fruits-form,#pol-vegetables-form,#pol-friends-form,#pol-building-form {
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    width: 184px;
+    text-align: center;
+    padding: 45px 15px 41px 19px;
+    background-color: rgba(0, 0, 0, 0.37);
+
+}
+.pol-beginner-topics:hover #pol-food-form{
+    visibility: visible;
+}
+.pol-beginner-topics:hover  #pol-family-form {
+    visibility: visible;
+}
+.pol-beginner-topics:hover #pol-room-form {
+    visibility:visible;
+}
+.pol-beginner-topics:hover #pol-school-form {
+    visibility: visible;
+}
+.pol-beginner-topics:hover #pol-classroom-form {
+    visibility: visible;
+}
+.pol-beginner-topics:hover #pol-fruits-form {
+    visibility: visible;
+}
+.pol-beginner-topics:hover #pol-vegetables-form {
+    visibility: visible;
+}
+.pol-beginner-topics:hover #pol-friends-form {
+    visibility: visible;
+}
+
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 02 css */
+/*
+.jssora02l                  (normal)
+.jssora02r                  (normal)
+.jssora02l:hover            (normal mouseover)
+.jssora02r:hover            (normal mouseover)
+.jssora02l.jssora02ldn      (mousedown)
+.jssora02r.jssora02rdn      (mousedown)
+*/
+.jssora02l {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url('images/a02.png') no-repeat;
+    overflow: hidden;
+}
+.jssora02r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url('images/a02.png') no-repeat;
+    overflow: hidden;
+}
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02l.jssora02ldn { background-position: -3px -33px; }
+.jssora02r.jssora02rdn { background-position: -63px -33px; }

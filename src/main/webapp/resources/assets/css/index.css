@@ -1,0 +1,326 @@
+#body {
+    height: 100%;
+    width: 100%;
+}
+
+#topIntro {
+    background-image: url("../images/006.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 550px;
+    margin-top: 66px;
+    background-attachment: fixed;
+}
+
+#navbar-nav {
+    padding-top: 1%;
+    /* text-align: center; */
+    padding-left: 8%;
+}
+
+#navbar-nav a {
+    font-size: 20px;
+    color: #1ae075;
+    font-weight: bold;
+}
+
+#navbar-nav a:hover {
+    background-color: white;;
+}
+
+#navbar-nav i {
+    color: white;
+}
+
+#navbar-nav li:last-child {
+    background-color: coral;
+}
+
+#navbar-right {
+    padding-top: 1%;
+    padding-right: 1%;
+    font-size: 20px;
+}
+
+#navbar-right span {
+    color: white;
+}
+
+#navbar-right a {
+    color: #d4d7dc;
+}
+
+#navbar-right a:hover {
+    background-color: lightseagreen;
+}
+
+#brand-name {
+    color: rgb(219, 204, 201);
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+#quotes {
+    padding: 90px 0 0 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: initial;
+    line-height: 50px;
+}
+
+#rotate, #rotate1 {
+    transform: rotate(-3.8deg);
+    -webkit-transform: rotate(-3.8deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-5deg);
+
+    /* IE */
+    -ms-transform: rotate(-5deg);
+
+    /* Opera */
+    -o-transform: rotate(-5deg);
+}
+
+#saying {
+    text-align: center;
+    transform: rotate(-3.8deg);
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.64);
+
+}
+
+#freeSignUp {
+    background-color: rgba(26, 224, 117, 0.68);
+    padding: 1% 2%;
+    margin-top: 111111%;
+    margin-left: 9%;
+
+}
+
+#freeSignUp span {
+    color: cornsilk;
+    padding-left: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mySecondContainer {
+    width: 100%;
+    height: 270px;
+    background-color: rgba(153, 153, 153, 0.15);;
+}
+
+#mySecondContainer h3 {
+    font-weight: 900;
+}
+
+#free {
+    padding-top: 11px;
+}
+
+#myThirdContainer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(92, 193, 94);
+    padding-top: 1%;
+}
+
+#myFourthContainer {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+    padding-top: 1px;
+}
+
+#footer {
+    background-color: black;
+
+}
+
+#footerBrand {
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    color: #c0d1dc;
+    padding-top: 4%;
+    font-family: monospace;
+}
+
+#followUs {
+    color: white;
+    display: block;
+    list-style: none;
+    font-size: large;
+    text-align: center;
+}
+
+#followUs li {
+    display: inline;
+    color: #03d2f3;
+}
+
+#followUs span {
+
+    font-size: smaller;
+}
+
+#followUs li a {
+    color: #03d2f3;
+}
+
+#followUs li a:hover {
+    color: white;
+}
+
+#followUs li a::after {
+    content: '';
+    display: inline-block;
+    height: 13px;
+    width: 1px;
+    margin: 0 19px;
+    border-right: 1px solid #484848;
+    position: relative;
+    top: -3px;
+}
+
+#support {
+    color: white;
+    display: block;
+    list-style: none;
+    font-size: large;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+#support a {
+    color: white;
+}
+
+#support li {
+    display: inline;
+    color: white;
+    font-size: x-small;
+    font-family: monospace;
+    margin-left: 1px;
+}
+
+#legal {
+    color: white;
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding-top: 0%;
+    margin: 0%;
+    margin-top: -1px;
+
+}
+
+#legal li {
+    display: inline;
+    color: white;
+    margin-left: 2px;
+}
+
+#money {
+    color: white;
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+
+#money li {
+    display: inline;
+    color: white;
+    margin-left: 2px;
+}
+
+#support a:hover {
+    list-style: none;
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+#legal li {
+    display: inline;
+    color: white;
+    font-size: xx-small;
+    font-family: sans-serif
+}
+
+#money li {
+    display: inline;
+    color: white;
+    font-size: xx-small;
+    font-family: sans-serif;
+}
+
+#service {
+    color: white;
+    text-align: center;
+    font-size: xx-small;
+    font-family: sans-serif;
+}
+
+#footerText p {
+    margin: 0px;
+    text-align: center;
+    color: bisque;
+    font-size: xx-small;
+    font-family: sans-serif;
+}
+
+#slogan {
+    font-family: monospace;
+    color: black;
+}
+
+.benefits {
+    margin-top: 40px;
+    width: 550px;
+    margin-left: 30px;
+
+}
+
+.benefits tr {
+    height: 80px;
+}
+
+.benefits tr td:nth-child(1) {
+    width: 60px;
+}
+
+.benefits tr td:nth-child(2) {
+    font-size: large;
+    font-family: ‘Courier New’, Courier sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+#ivideo {
+    margin-right: 23px;
+    margin-top: 23px;
+}
+
+.train-item span {
+    margin-right: 16px;
+    font-size: large;
+    color: #1ae075
+}
+
+.table-train td {
+    height: 70px;
+}
+
+.table-train td:nth-child(2) {
+    font-family: ‘Courier New’, Courier sans-serif;
+    font-size: large;
+    font-style: italic;
+    color: black;
+}
