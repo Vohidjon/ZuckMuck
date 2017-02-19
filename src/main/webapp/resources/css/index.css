@@ -1,23 +1,15 @@
-#body {
-    height: 100%;
-    width: 100%;
+
+.top-nav {
+    background: black;
 }
 
 #topIntro {
-    background-image: url("../images/006.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/menu-photo.6.jpg);
+    background-attachment: fixed;
     background-size: 100% 100%;
     width: 100%;
-    height: 550px;
-    margin-top: 66px;
-    background-attachment: fixed;
-}
-
-#navbar-nav {
-    padding-top: 1%;
-    /* text-align: center; */
-    padding-left: 8%;
+    margin-top: 62px;
+    text-align: center;
 }
 
 #navbar-nav a {
@@ -26,34 +18,46 @@
     font-weight: bold;
 }
 
+#navbar-nav {
+    margin-top: 10px;
+}
+
 #navbar-nav a:hover {
     background-color: white;;
 }
 
-#navbar-nav i {
+.authorization i {
     color: white;
 }
 
-#navbar-nav li:last-child {
-    background-color: coral;
+.authorization {
+    list-style-type: none;
 }
 
-#navbar-right {
-    padding-top: 1%;
-    padding-right: 1%;
+.authorization li {
+    text-transform: capitalize;
     font-size: 20px;
+    padding: 10px;
+    vertical-align: bottom;
+    margin-top: 9px;
+    margin-bottom: 10px;
 }
 
-#navbar-right span {
+.authorization li i {
+    padding-right: 5px;
+}
+
+.authorization li span {
+    color: #68baea;
+}
+
+.authorization li a:hover {
     color: white;
+    text-decoration: none;
 }
 
-#navbar-right a {
-    color: #d4d7dc;
-}
-
-#navbar-right a:hover {
-    background-color: lightseagreen;
+.authorization li:hover {
+    background: coral;
 }
 
 #brand-name {
@@ -64,79 +68,47 @@
 
 #quotes {
     padding: 90px 0 0 0;
-    text-align: center;
     color: white;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
     font-family: initial;
     line-height: 50px;
 }
 
-#rotate, #rotate1 {
-    transform: rotate(-3.8deg);
-    -webkit-transform: rotate(-3.8deg);
-
-    /* Firefox */
-    -moz-transform: rotate(-5deg);
-
-    /* IE */
-    -ms-transform: rotate(-5deg);
-
-    /* Opera */
-    -o-transform: rotate(-5deg);
-}
-
 #saying {
-    text-align: center;
-    transform: rotate(-3.8deg);
     font-family: sans-serif;
     color: rgba(0, 0, 0, 0.64);
-
 }
 
-#freeSignUp {
-    background-color: rgba(26, 224, 117, 0.68);
-    padding: 1% 2%;
-    margin-top: 111111%;
-    margin-left: 9%;
-
+.home-sign-button {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 142px;
 }
 
-#freeSignUp span {
-    color: cornsilk;
-    padding-left: 5%;
-}
-
-a {
-    text-decoration: none;
-}
-
-#mySecondContainer {
-    width: 100%;
-    height: 270px;
+.second-sec {
     background-color: rgba(153, 153, 153, 0.15);;
 }
 
-#mySecondContainer h3 {
-    font-weight: 900;
+.second-sec div {
+    padding: 10px 100px;
+    text-align: center;
 }
 
 #free {
     padding-top: 11px;
 }
 
-#myThirdContainer {
-    width: 100%;
-    height: 500px;
+.third-sec {
     background-color: rgb(92, 193, 94);
-    padding-top: 1%;
 }
 
-#myFourthContainer {
-    width: 100%;
-    height: 500px;
+.fourth-sec {
     background-color: #f0f0f0;
-    padding-top: 1px;
+}
+
+.table-train {
+    margin-left: 20px;
 }
 
 #footer {
@@ -145,7 +117,7 @@ a {
 }
 
 #footerBrand {
-    font-size: -webkit-xxx-large;
+    font-size: 30px;
     text-align: center;
     color: #c0d1dc;
     padding-top: 4%;
@@ -279,6 +251,7 @@ a {
 #slogan {
     font-family: monospace;
     color: black;
+    margin: 50px 0px 50px 0px
 }
 
 .benefits {

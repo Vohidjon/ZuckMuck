@@ -7,8 +7,12 @@ package com.websystique.springmvc.controller;
 import java.util.List;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-
+/*
+import com.websystique.springmvc.dao.PhotoUploadDAO;*/
+import com.websystique.springmvc.model.Photo_Upload;
+import org.hibernate.annotations.SourceType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
@@ -21,6 +25,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.websystique.springmvc.model.Employee;
 import com.websystique.springmvc.service.EmployeeService;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 @Controller
 public class AppController {
@@ -28,6 +35,9 @@ public class AppController {
     EmployeeService service;
     @Autowired
     MessageSource messageSource;
+   /* @Autowired
+    PhotoUploadDAO photoUploadDAO;*/
+
 
     /*
      * This method will list all existing employees.
@@ -131,5 +141,28 @@ public class AppController {
     public String listAllLessons(ModelMap model) {
         return "beginner";
     }
+
+
+    @RequestMapping(value = "/photoUpload", method = RequestMethod.GET)
+    public String showPhotoUploadForm() {
+        return "photoUpload";
+    }
+
+  /*  @RequestMapping(value = "/doUpload", method = RequestMethod.POST)
+    public String handleUploadFile(@RequestParam CommonsMultipartFile[] photoUpload) {
+        if (photoUpload != null && photoUpload.length > 0) {
+            for (CommonsMultipartFile multipartFile : photoUpload) {
+                System.out.println("Saving file: " + multipartFile.getOriginalFilename());
+                Photo_Upload photo_upload = new Photo_Upload();
+                photo_upload.setPhotoName(multipartFile.getOriginalFilename());
+                photo_upload.setData(multipartFile.getBytes());
+                photoUploadDAO.save(photo_upload);
+            }
+        }
+        return "photoUpload";
+    }*/
+
 }
+
+
 
